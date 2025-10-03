@@ -1,0 +1,352 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George Chikhladze - Software Developer</title>
+	<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2d2d2d;
+            --secondary-color: #6c757d;
+            --accent-color: #0a13e6;
+            --light-bg: #f8f9fa;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Bricolage Grotesque', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--primary-color);
+            background-color: #fff;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            padding: 80px 0 40px;
+            text-align: center;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 4px solid var(--light-bg);
+            box-shadow: var(--box-shadow);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+        
+        .tagline {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            color: var(--secondary-color);
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--light-bg);
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background: var(--accent-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin: 10px 5px;
+        }
+        
+        .btn:hover {
+            background: #0052cc;
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+        }
+        
+        .btn-outline:hover {
+            background: var(--accent-color);
+            color: white;
+        }
+        
+        section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-img {
+            height: 120px;
+            margin: 0 20px;
+            object-fit: cover;
+            border: 1px solid white;
+            border-radius: 20px;
+        }
+        
+        .project-content {
+            padding: 20px;
+        }
+        
+        .project-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .project-title span {
+            display: block;
+            font-size: 1rem;
+            color: var(--secondary-color);
+        }
+        
+        .project-desc {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+        
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .project-link i {
+            margin-left: 5px;
+            transition: transform 0.3s ease;
+        }
+        
+        .project-link:hover i {
+            transform: translateX(3px);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--light-bg);
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                padding: 60px 0 30px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+            
+            section {
+                padding: 40px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>            
+            <h1>George Chikhladze</h1>
+            <h2>Software .NET &amp; Go Developer</h2>
+            <p class="tagline">
+				With over 12 years of experience in building innovative digital solutions, specializing in web and mobile applications. 
+				Passionate about creating efficient, scalable, and user-friendly solutions.
+			</p>
+
+            <div class="social-links">
+                <a href="mailto:george.chikhladze@outlook.com" class="social-link" target="blank" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://t.me/georgechikhladze" class="social-link" target="blank" aria-label="Telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://github.com/georgechikhladze" class="social-link" target="blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/georgechikhladze/" class="social-link" target="blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+
+            <div>
+                <a href="https://cv.anywherebuthome.ru/cv_georgechikhladze_backend_developer.pdf" class="btn" download="">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+                <a href="#projects" class="btn btn-outline">
+                    View My Projects
+                </a>
+            </div>
+
+        </header>
+        
+        <section id="projects">
+            <h2 class="section-title">Personal Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://cdn-orooms.ru/images/favicons/original/android-icon-192x192.png" alt="Orooms" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Orooms
+                            <span>Ex-cofounder</span>
+                        </h3>
+                        <p class="project-desc">A real estate portal for searching apartments directly from developers.</p>
+                        <a href="https://orooms.ru" class="project-link" target="_blank">
+                            Visit Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>                
+                <div class="project-card">
+                    <img src="https://mobby.me/img/otto.png" alt="Otto" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Otto
+                            <span>Cofounder</span>
+                        </h3>
+                        <p class="project-desc">A mobile application for safe internet browsing, providing secure access to all online resources.</p>
+                        <a href="https://mobby.me" class="project-link" target="_blank">
+                            Visit Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>   
+        
+        <section id="working-projects">
+            <h2 class="section-title">Working Projects</h2>
+
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <img src="https://img.realestate.ru/profile/2/channels4_profile.webp" alt="Delight" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Delight</h3>
+                        <a href="https://www.delight.ru/" class="project-link" target="_blank">
+                            Visit Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>    
+
+                <div class="project-card">
+                    <img src="https://www.mirkvartir.ru/nextpageassets/favicons/new-touch-icon-ipad-retina.png" alt="MirKvartir" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Mirkvartir</h3>
+                        <a href="https://www.mirkvartir.ru/" class="project-link" target="_blank">
+                            Visit Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/ad/1f/7d/ad1f7d24-4a58-87d9-58b9-342a5286cb57/DCGAppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/434x0w.webp" alt="Doctorgram" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Doctorgram</h3>
+                        <a href="https://apps.apple.com/us/app/%D0%B4%D0%BE%D0%BA%D1%82%D0%BE%D1%80%D0%B3%D1%80%D0%B0%D0%BC-%D0%BC%D0%B5%D1%81%D1%81%D0%B5%D0%BD%D0%B4%D0%B6%D0%B5%D1%80/id1474241440" class="project-link" target="_blank">
+                            Visit Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/89/e1/c1/89e1c106-f130-783b-5dc5-4b2c80a4c70a/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/434x0w.webp" alt="Beeline" class="project-img">
+                    <div class="project-content">
+                        <h3 class="project-title">Beeline</h3>
+                        <a href="https://apps.apple.com/ru/app/%D0%B1%D0%B8%D0%BB%D0%B0%D0%B9%D0%BD/id569251594" class="project-link" target="_blank">
+                            Visit Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>   
+
+        <footer>
+            <p>© 2025 AnywhereButHome. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
