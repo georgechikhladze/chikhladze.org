@@ -420,14 +420,15 @@ var data =
 		},
 		{
 			"id": 21,
-			"name": "TBA",
-			"date": 2025,
+			"name": "Sanctuary",
+			"date": 2026,
 			"type": "Studio",
-			"path": "./database/evanescence-tba/",
+			"path": "./database/evanescence-sanctuary/",
 			"format": "mp3",
 			"songs": [
-				{ "albumId": 21, "order": 1, "name": "Afterlife", "duration": "04:10" },
-				{ "albumId": 21, "order": 2, "name": "Fight Like A Girl (feat. K.Flay)", "duration": "03:06" },				
+				{ "albumId": 21, "order": 1, "name": "Who Will You Follow", "duration": "03:56" },
+				{ "albumId": 21, "order": 2, "name": "Afterlife", "duration": "04:10" },
+				{ "albumId": 21, "order": 3, "name": "Fight Like A Girl (feat. K.Flay)", "duration": "03:06" },				
 			]
 		}
 	]
