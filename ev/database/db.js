@@ -426,9 +426,19 @@ var data =
 			"path": "./database/evanescence-sanctuary/",
 			"format": "mp3",
 			"songs": [
-				{ "albumId": 21, "order": 1, "name": "Who Will You Follow", "duration": "03:56" },
-				{ "albumId": 21, "order": 2, "name": "Afterlife", "duration": "04:10" },
-				{ "albumId": 21, "order": 3, "name": "Fight Like A Girl (feat. K.Flay)", "duration": "03:06" },				
+				{ "albumId": 21, "order": 1, "name": "Beautiful Lie", "duration": "04:10" },
+				{ "albumId": 21, "order": 2, "name": "Tell Me When You've Had Enough", "duration": "03:19" },	
+				{ "albumId": 21, "order": 3, "name": "Who Will You Follow", "duration": "03:56" },
+				{ "albumId": 21, "order": 4, "name": "Rapture", "duration": "03:26" },
+				{ "albumId": 21, "order": 5, "name": "Afterlife", "duration": "04:10" },
+				{ "albumId": 21, "order": 6, "name": "Sanctuary", "duration": "04:18" },	
+				{ "albumId": 21, "order": 7, "name": "How Do I Heal", "duration": "03:49" },
+				{ "albumId": 21, "order": 8, "name": "About Us", "duration": "04:50" },
+				{ "albumId": 21, "order": 9, "name": "Calm Down", "duration": "04:18" },	
+				{ "albumId": 21, "order": 10, "name": "Self-Destruct", "duration": "03:53" },
+				{ "albumId": 21, "order": 11, "name": "Forever Without You", "duration": "05:16" },
+				{ "albumId": 21, "order": 12, "name": "Wide Open Heart", "duration": "03:34" },
+				{ "albumId": 21, "order": 13, "name": "Fight Like A Girl (feat. K.Flay)", "duration": "03:06" },				
 			]
 		}
 	]
